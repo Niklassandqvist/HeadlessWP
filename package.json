@@ -8,11 +8,13 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "start": "serve -s dist -l 3000",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.3.3"
+    "astro": "^7.3.3",
+    "serve": "^14.2.6"
   },
   "allowScripts": {
     "esbuild": true
