@@ -25,7 +25,10 @@ const companyPostal = company.postnummer || "924 32";
 const companyCity = company.ort || "Stockholm";
 const companyHours = company.oppettider || "Mån-fre 08:00–17:00";
 const ctaText = company["cta-text"] || "Läs vår blogg";
-const ctaLink = company["cta-lank"] || "http://localhost:4321/blog";
+const configuredCtaLink = company["cta-lank"] || "/blog";
+const ctaLink = configuredCtaLink
+  .replace(/^https?:\/\/localhost:4321/, "")
+  .replace(/^https:\/\/y3av-t6e\.se\.vkube\.cloud/, "") || "/blog";
 
 const heroMediaId = company["hero-bild"];
 let heroImage = "";
