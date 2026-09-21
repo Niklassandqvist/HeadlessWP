@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "start": "serve -s dist -l 3000",
+    "start": "serve dist -l 3000",
     "preview": "astro preview",
     "astro": "astro"
   },
